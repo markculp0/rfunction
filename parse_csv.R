@@ -3,15 +3,22 @@
 # Parse CSV Files
 # ===============
 
-# Parse a CSV file --------------------------------------------------------
 
-pcsv <- function(f){
+# rcsv --------------------------------------------------------------------
+
+# Read from CSV file
+# Usage: df <- rcsv("file.csv")
+
+rcsv <- function(f){
   df <- readr::read_csv(f, col_types = list(
     .default = readr::col_character()
   ))
 }
 
-# Parse CSV and write to Excel --------------------------------------------
+# wcsv --------------------------------------------------------------------
+
+# Parse CSV and Write to Excel
+# Usage: wcsv("data.csv")
 
 wcsv <- function(f){
   # Read CSV

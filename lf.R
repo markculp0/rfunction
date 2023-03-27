@@ -21,6 +21,8 @@ setwd(fundir)
 
 # Source from scripts
 source("parse_csv.R")
+source("parse_json.R")
+source("parse_xml.R")
 source("script.R")
 
 # Copy function loader to execution directory

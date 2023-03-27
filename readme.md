@@ -1,22 +1,27 @@
 
 ***
 
-## R Utility Functions 
+## R Functions 
 
 ***
 
-Loads useful utility functions into memory. Source all functions by sourcing the "lf.R" script. 
+Load useful utility functions for data access into memory. Source all functions with the "lf.R" script. A different executable directory and functions directory is selected by changing the "exedir" and "fundir" variables.
 
-* ls_csv - list CSV files
+##### Basic utility functions
 
-* ls_txt - list text files
+* ls_csv - List CSV files
 
-* sd - set working directory 
+* ls_txt - List text files
 
-* pcsv - parse CSV file 
+* sd - Set working directory 
 
-* wcsv - write CSV to Excel
+* rcsv - Read CSV file 
 
+* wcsv - Read in and write CSV to Excel
+
+##### Dataset specific functions
+
+* rjson_nyc_dem_by_zip - Read NYC Demographic Statistics By Zip Code:  https://catalog.data.gov/dataset/demographic-statistics-by-zip-code
 
 ***
 ***
